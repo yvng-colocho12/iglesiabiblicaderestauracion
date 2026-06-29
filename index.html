@@ -621,7 +621,17 @@ function showMain(){
 // Calendar
 const MN=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 let cY=new Date().getFullYear(), cM=new Date().getMonth();
-const events={};
+const events={
+  "2026-7-31": [
+    { t:"Pelicula de Jovenes", h:"7:30 PM", c:"yellow" }
+  ],
+  "2026-8-28": [
+    { t:"Culto de Jovenes", h:"8:00 PM", c:"yellow" }
+  ],
+  "2026-9-25": [
+    { t:"Pelicula de Jovenes", h:"7:30 PM", c:"yellow" }
+  ]
+};};
 
 function addRecurring(){
   for(let y=cY-1;y<=cY+1;y++){
